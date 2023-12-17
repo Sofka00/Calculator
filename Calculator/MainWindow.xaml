@@ -1,0 +1,47 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="350" ResizeMode="NoResize">
+    <Grid OpacityMask="Black" Background="#FF151414">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonOne" Grid.Column="0" Grid.Row="4" Content="1" FontSize="48" BorderBrush="Black"  Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonTwo" Grid.Column="1" Grid.Row="4" Content="2" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonThree" Grid.Column="2" Grid.Row="4" Content="3" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonFoure" Grid.Column="0" Grid.Row="3" Content="4" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonFive" Grid.Column="1" Grid.Row="3" Content="5" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonSix" Grid.Column="2" Grid.Row="3" Content="6" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonSeven" Grid.Column="0" Grid.Row="2" Content="7" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonEight" Grid.Column="1" Grid.Row="2" Content="8" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonNine" Grid.Column="2" Grid.Row="2" Content="9" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonNull" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Content="0" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNumber_Click" Background="#FF605D5D"/>
+        <Button x:Name="ButtonPlus" Grid.Column="3" Grid.Row="4" Content="+" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonPlus_Click" />
+        <Button x:Name="ButtonMinus" Grid.Column="3" Grid.Row="3" Content="-" FontSize="72" BorderBrush="Black" Margin="3" Click="ButtonMinus_Click"/>
+        <Button x:Name="ButtonVirgul" Grid.Column="2" Grid.Row="5" Content="." FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonVirgul_Click"/>
+        <Button x:Name="ButtonDivision" Grid.Column="3" Grid.Row="2" Content="/" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonDivision_Click"/>
+        <Button x:Name="ButtonУquals" Grid.Column="3" Grid.Row="5" Content="=" FontSize="48" BorderBrush="Black" Margin="3"/>
+        <Button x:Name="ButtonEquals" Grid.Column="3" Grid.Row="5" Content="=" FontSize="48" BorderBrush="Black" Margin="3" Click= "ButtonEquals_Click"/>
+        <Button x:Name="ButtonClear" Grid.Column="0" Grid.Row="1" Content="C" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonClear_Click"/>
+        <Button x:Name="ButtonNegative" Grid.Column="1" Grid.Row="1" Content="+/-" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonNegative_Click"/>
+        <Button x:Name="ButtonPersent" Grid.Column="2" Grid.Row="1" Content="sqrt" FontSize="36" BorderBrush="Black" Margin="3" Click="ButtonPersent_Click"/>
+        <Button x:Name="ButtonMultiplication" Grid.Column="3" Grid.Row="1" Content="x" FontSize="48" BorderBrush="Black" Margin="3" Click="ButtonMultiplication_Click"/>
+        <TextBox x:Name="TextBoxMain" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" FontSize="48" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="3"/>
+    </Grid>
+</Window>
